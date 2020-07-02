@@ -8,6 +8,7 @@ namespace Auto_Project
 {
     static class Program
     {
+        public static Auto_ProjectEntities2 wftDb = new Auto_ProjectEntities2();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +17,7 @@ namespace Auto_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FormAuthorization());
         }
     }
 }
